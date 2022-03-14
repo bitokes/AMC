@@ -505,12 +505,22 @@ color: #fff
     height: 450px;
   }
 
+  #contactos{
+    background-color: #446587;
+  }
+
 
 
   @media (max-width: 876px) {
    
     .mapa{
       width: auto;
+    }
+
+    [data-san=slideLeft] {
+      opacity: 0;
+      transform: translateX(-80px);
+      transition-duration: 1s;
     }
 
     }
