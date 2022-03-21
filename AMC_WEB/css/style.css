@@ -156,7 +156,7 @@ position: relative;
 cursor: pointer;
 margin: 0 15px;
 box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
-transition: .5s;
+transition: .1s;
 background-color: #555
 
 }
@@ -168,21 +168,20 @@ z-index: 1;
 top: 50%;
 left: 50%;
 width: 500px;
-height: 250px;
-transform: translate(-140%, -50%);
+height: 100px;
+transform: translate(50%,50%);
 background-color: #344e69;
 opacity: 0.8;
-
-transition: .8s
+visibility: hidden;
+transition: .4s
 }
 
 .image:hover:after {
-transform: translate(-50%, -50%)
+transform: translate(-50%, -50%);
+visibility:visible;
 }
 
-.image:hover img {
-transform: translate(-50%, -50%) scale(1.3) rotate(20deg)
-}
+
 
 .imgg {
 position: absolute;
@@ -190,7 +189,7 @@ height: 110%;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-transition: .8s
+transition: .4s
 }
 
 i {
@@ -198,14 +197,15 @@ position: absolute;
 z-index: 2;
 top: 50%;
 left: 50%;
-transform: translate(-2000px, -50%);
+transform: translate(0px, 50%);
 color: #fff;
 transition: .8s;
 transition-timing-function: ease-in
+
 }
 
 .image:hover i {
-transform: translate(-50%, -50%);
+transform: translate(50%, 50%);
 transition-timing-function: ease
 }
 
@@ -516,7 +516,9 @@ color: #fff
     fill: #344e69;
   }
 
-
+  .iconAzul{
+    fill: #344e69;
+  }
 
 
   
@@ -565,13 +567,6 @@ color: #fff
 
 
 
-
-
-
-
-
-    
-    
 
 
 
